@@ -2,6 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const alertMsg = document.getElementById("alertMsg");
 
+
+  const yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
   form.addEventListener("submit", function (e) {
     e.preventDefault(); // prevent page reload
 
